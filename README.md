@@ -44,7 +44,7 @@ touch App.ts
 
 ### `/src/index.html`
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
