@@ -13,10 +13,6 @@ This guide follows a quickstart tutorial on how to setup and configure a NPM pro
 mkdir <app> && cd <app>
 ```
 
-```bash
-mkdir <app> && cd <app>
-```
-
 ## Initializing NPM project
 
 ### Generation of `package.json`
