@@ -63,7 +63,7 @@ touch App.ts
 ### Installation
 ```bash
 npm install -D webpack webpack-cli webpack-dev-server
-npm install -D install path html-webpack-plugin style-loader css-loader sass-loader node-sass file-loader @svgr/webpack
+npm install -D path html-webpack-plugin style-loader css-loader sass-loader node-sass file-loader @svgr/webpack
 ```
 
 ### `webpack.config.js`
