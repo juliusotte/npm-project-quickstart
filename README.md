@@ -135,7 +135,7 @@ npm install -D @babel/core @babel/node @babel/preset-env @babel/preset-typescrip
 
 ### `.babelrc`
 ```bash
-touch webpack.config.js && nano webpack.config.js
+touch .babelrc && nano .babelrc
 ```
 
 ```json
