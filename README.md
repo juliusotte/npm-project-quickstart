@@ -197,3 +197,57 @@ touch tsconfig.json && nano tsconfig.json
   development mode. For further information, see `webpack.config.js`.
 - Run `npm run start` or `yarn start` to serve webpack in dev mode. The webpack dev server will launch at
   `localhost:9000`.
+
+# Adding React
+
+## `/src/index.html`
+The `<div id=root></div>` is the mounting point for the React application that is going to be created. Make sure that
+it is included in `index.html`.
+
+## `/src/index.ts` > `/src/index.tsx`
+First, rename `/src/index.ts` to `/src/index.tsx` in order to enable TS syntax extension. Afterwards, implement the
+React application bootstrap:
+
+```tsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+## `/src/App.ts` > `/src/App.tsx`
+First, rename `/src/App.ts` to `/src/App.tsx` in order to enable TS syntax extension. Afterwards, implement the root
+`App` component:
+
+```tsx
+import React from 'react';
+
+const App = () => {
+  return <h1>hello world</h1>;
+};
+
+export default App;
+```
+
+## Babel React preset
+```bash
+npm install -D @babel/preset-react
+```
+
+### `.babelrc`
+```json
+{
+  "presets": [
+    ...
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ]
+}
+```
+
+## React installation
+```bash
+npm install react react-dom @types/react @types/react-dom
+```
