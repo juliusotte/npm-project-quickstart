@@ -71,7 +71,7 @@ npm install -D path html-webpack-plugin style-loader css-loader sass-loader node
 
 ### `webpack.config.js`
 ```bash
-touch webpack.config.js && nano webpack.config.js
+touch webpack.config.ts && nano webpack.config.ts
 ```
 
 ```javascript
@@ -197,7 +197,7 @@ touch tsconfig.json && nano tsconfig.json
 - The project is built under `<app>/build/`. Run `npm run clean` or `yarn clean` to clean up the build.
 - Run `npm run build` or `yarn build` to build to application to `<app>/build/`. Webpack determines the build mode
   (development / production) depending on the env variable `NODE_ENV`, otherwise it will assume that webpack runs in
-  development mode. For further information, see `webpack.config.js`.
+  development mode. For further information, see `webpack.config.ts`.
 - Run `npm run start` or `yarn start` to serve webpack in dev mode. The webpack dev server will launch at
   `localhost:9000`.
 
